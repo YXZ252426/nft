@@ -1,16 +1,12 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const contractAddress = "0x11F1ca02cCF36268e9D53a69b91ee46934af4B78"; // 你的合约地址
-  const recipients = [
-    "0xde2f350f335eeee965b399232e9a624ae23b59e8"
-    // TODO：填写接收者地址，例如：
-    // "0x1111...","0x2222..."
+  const contractAddress = "0x99E7544f8516d9C672C58a1c8a8f4af0A65C4a4a"; // 你的合约地址
+  const recipients = ["0xB61D46B92EdF56DD605480f55dfC2EF27df08c36", "0x7c5F46c52A93b4Bf48C466faC5CF59f8b7A52300"
+    //TODO：填写接收者地址
   ];
-
-  // TODO：填写元数据链接（建议使用 IPFS 链接）
-  // 可先用仓库里提供的示例：ipfs://bafkreiar3k5vy66vwe3xlmaoeeyypixtcfzyuxa4qcadpwqixvv4lapm3i
-  const tokenURI = "ipfs://bafkreiar3k5vy66vwe3xlmaoeeyypixtcfzyuxa4qcadpwqixvv4lapm3i";
+  //TODO：填写元数据链接（可以用这个“ipfs://bafkreiar3k5vy66vwe3xlmaoeeyypixtcfzyuxa4qcadpwqixvv4lapm3i”）
+  const tokenURI = "ipfs://bafkreibq3ngx7x7ys5u2rnphc7az7o5dm3pfvjwkwmsoaznywrdfz6d4xu"; // 固定元数据链接
 
   const MyNFT = await ethers.getContractAt("MyNFT", contractAddress);
 
