@@ -12,7 +12,7 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY!], // 确保 .env 中有 PRIVATE_KEY
     },
     base: {
-      url: "https://mainnet.base.org", // 主网，测试网用 base-goerli
+      url: "https://sepolia.base.org", // 主网，测试网用 base-goerli
       accounts: [process.env.PRIVATE_KEY!],
     },
   },
